@@ -11,7 +11,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(@NonNull CorsRegistry registry) {
         registry.addMapping("/**") // Permite CORS para todos los endpoints
-                .allowedOrigins("http://localhost:5173") // La URL de tu frontend con Vite
+                .allowedOrigins(
+                        "https://main.d5wyalixm0s6f.amplifyapp.com", // Frontend en Amplify
+                        "http://localhost:5173" // Frontend en desarrollo local (puerto común de Vite)
+                )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
     }
