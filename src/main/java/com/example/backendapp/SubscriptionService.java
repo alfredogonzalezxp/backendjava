@@ -4,8 +4,8 @@ package com.example.backendapp;
 //import com.example.backendapp.Subscription;
 //import com.example.backendapp.SubscriptionStatus;
 //import com.example.backendapp.FileRepository;
-import com.fasterxml.jackson.core.type.TypeReference;
-import javax.annotation.PostConstruct;
+import com.fasterxml.jackson.core.type.TypeReference; 
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
